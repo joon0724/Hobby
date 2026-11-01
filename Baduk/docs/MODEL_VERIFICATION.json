@@ -1,0 +1,12 @@
+[
+  {
+    "model": "human.bin.gz",
+    "official_download_sha256": "637746e44f0efe00ad1245a50aa9bbf0716efe364c43965ead97bd6835d84ab5",
+    "status": "MATCH"
+  },
+  {
+    "model": "default.bin.gz",
+    "official_download_sha256": "7c8a84ed9ee737e9c7e741a08bf242d63db37b648e7f64942f3a8b1b5101e7c2",
+    "status": "MATCH"
+  }
+]

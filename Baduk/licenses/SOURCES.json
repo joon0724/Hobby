@@ -1,0 +1,73 @@
+[
+  {
+    "file": "KataGo-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/LICENSE",
+    "sha256": "e302e84d35ee7aaf5f59530e01d72b5617af6b56a4b53d390942c1b70b56a40b"
+  },
+  {
+    "file": "KataGo-CONTRIBUTORS.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/CONTRIBUTORS",
+    "sha256": "92eef7672f2ff5435f2e20f8bbfb82e54cf238dbaffe7eaf4f65a276abd2208a"
+  },
+  {
+    "file": "filesystem-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/cpp/external/filesystem-1.5.8/LICENSE",
+    "sha256": "1b265537c97cfb422ffb52492c96979943f54fab8746a6dd38d8329953d487cc"
+  },
+  {
+    "file": "half-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/cpp/external/half-2.2.0/LICENSE.txt",
+    "sha256": "b74a5c2b685e8fc30073606d69a0c3bad38924eea9b5e07984da03716a7d773d"
+  },
+  {
+    "file": "httplib-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/cpp/external/httplib/LICENSE",
+    "sha256": "4b45cbe16d7b71b89ae6127e26e0d90a029198ca5e958ad8e3d0b8bbed364d8b"
+  },
+  {
+    "file": "mozilla-cacerts-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/cpp/external/mozilla-cacerts/LICENSE",
+    "sha256": "8767f414caf80dce7775d9a2d54334d83afb32d73ae24ea2e85e311d4a79b7d3"
+  },
+  {
+    "file": "tclap-COPYING.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/cpp/external/tclap-1.2.2/COPYING",
+    "sha256": "cd81a61d47aeb1ed63036ca260baee37719923bbd7ebd988ec4edae128f3b6eb"
+  },
+  {
+    "file": "nlohmann-json-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/nlohmann/json/v3.11.3/LICENSE.MIT",
+    "sha256": "86b998c792894ccb911a1cb7994f7a9652894e7a094c0b5e45be2f553f45cf14"
+  },
+  {
+    "file": "OpenSSL-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.0.16/LICENSE.txt",
+    "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+  },
+  {
+    "file": "libzip-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/nih-at/libzip/v1.11.3/LICENSE",
+    "sha256": "01c022eca6d566e2e8792fd0f091a28653b2a608319922bcd4de91c49d1438e1"
+  },
+  {
+    "file": "zlib-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/madler/zlib/v1.3.1/LICENSE",
+    "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+  },
+  {
+    "file": "Eigen-COPYING.MPL2.txt",
+    "source": "https://gitlab.com/libeigen/eigen/-/raw/3.4.0/COPYING.MPL2",
+    "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+  },
+  {
+    "file": "sha2-source-license.txt",
+    "source": "https://raw.githubusercontent.com/lightvector/KataGo/v1.16.3/cpp/core/sha2.cpp",
+    "sha256": "c6579bdfc2dda0fa0399255bfae272cfa5f117a5191fd5c999c80988f6915a1d"
+  },
+  {
+    "file": "KataGo-network-license.txt",
+    "source": "https://katagotraining.org/network_license/",
+    "sha256": "f0c5dd36891a0d53e543a8728cbf822fdf9920aafc4f1f72922fdca48d478078",
+    "format": "Readable text extracted from official HTML"
+  }
+]

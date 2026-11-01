@@ -1,0 +1,7 @@
+{
+  "file": "Baduk_Data/Managed/Assembly-CSharp.dll",
+  "before_sha256": "bfee66a0087b425b58b151ae63c26d86a4245a4be64532b516a887ba2a53e117",
+  "after_sha256": "44ea013229c6b8b4890ed1e54ad28e94ee394b4e1b6c62666a84cdb6092b2130",
+  "changed_bytes": 123,
+  "operation": "Only RSDS PDB path replaced by basename and NUL padding; no IL modification"
+}

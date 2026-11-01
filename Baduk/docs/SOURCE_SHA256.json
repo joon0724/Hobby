@@ -1,0 +1,284 @@
+{
+  "format": 1,
+  "excludes": [
+    "docs/SOURCE_SHA256.json",
+    "release-assets/"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 181,
+      "sha256": "91cfbda7a8e48e407f5a0b0b23ce738d60201d5be668ce98536a077b4f1f06a1"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 561,
+      "sha256": "421e6e12d5d5c86df9c791295d1eaa8e9e2af05dc49067fe263ab938ecf88f37"
+    },
+    {
+      "path": "BADUK_BUILD_GUIDE.md",
+      "bytes": 18229,
+      "sha256": "790280722009dbee9825153df7fdd3f8b1a27d9ed724bc489b0eeede985b6b66"
+    },
+    {
+      "path": "BadukUnity/.gitignore",
+      "bytes": 67,
+      "sha256": "b2f8193db74a48e0f2a36dfa28b101fa03bf227d6f13e354e433d8cb6d2e6857"
+    },
+    {
+      "path": "BadukUnity/Assets/Editor/BuildGame.cs",
+      "bytes": 10864,
+      "sha256": "3c35621c899ce33391df0f4c200b6c9a3a64c8d896acd63c4c35206511140135"
+    },
+    {
+      "path": "BadukUnity/Assets/Editor/BuildGame.cs.meta",
+      "bytes": 254,
+      "sha256": "bb1cb444dc3b319b028f6f814885e57e85d1859eb9be53db8ff60b23a34aedc6"
+    },
+    {
+      "path": "BadukUnity/Assets/Editor.meta",
+      "bytes": 180,
+      "sha256": "19712ef72ac02a6f7ded1810563643eccda5b4ecb6f78d70dfa218463fd377ab"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/BadukApp.cs",
+      "bytes": 37879,
+      "sha256": "a46f48e5622ab322186ab12b63902cbbcaa6b0cded150e21b19058e1b69671fd"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/BadukApp.cs.meta",
+      "bytes": 254,
+      "sha256": "8c6f1ffa90663b5bfa015d030d71a53e56c889a01bfe2d88f71b87ab1dac5f4d"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/GoGame.cs",
+      "bytes": 9596,
+      "sha256": "a5b8228aa4301df1b0b182cb00bb27fdc37dd74b31e186018448bfb70a236c39"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/GoGame.cs.meta",
+      "bytes": 254,
+      "sha256": "487338fd2c47727fab51090af274a8475557373b381c54aa2bd9f16f19b8381f"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/KataGoClient.cs",
+      "bytes": 3858,
+      "sha256": "180683763753f543610d26c64bc02f1b3b3ce108453e9e20605ba3931ee5b5cc"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/KataGoClient.cs.meta",
+      "bytes": 254,
+      "sha256": "25a17ba29d4f3e7aeaed2d64238891b0987be51167f2897b2f98aba42f95ea5e"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/TerritoryEstimate.cs",
+      "bytes": 2163,
+      "sha256": "01a4090c76cd6e7c01e2f25ad694a24e220dd497320715f42a6739ecd92967fd"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts/TerritoryEstimate.cs.meta",
+      "bytes": 254,
+      "sha256": "f31290d29bcdd62c523cece6e0be95215e0ebea2ef248dbe2e72395328b68e41"
+    },
+    {
+      "path": "BadukUnity/Assets/Scripts.meta",
+      "bytes": 180,
+      "sha256": "413d07cce239a20b2d37cf3353b1a13a25e39e4e5ff6697a0ef800a64870a5e8"
+    },
+    {
+      "path": "BadukUnity/Assets/StreamingAssets/KataGo/baduk.cfg",
+      "bytes": 822,
+      "sha256": "a9d69409dfa300d18a210ccdefef43521344ccd55b061d3226fad00433f0a82f"
+    },
+    {
+      "path": "BadukUnity/Assets/StreamingAssets/KataGo/baduk.cfg.meta",
+      "bytes": 162,
+      "sha256": "e2d15c6496814a6fcf32a0fc90494244cac1aebeb80a94e11402a1abb879141f"
+    },
+    {
+      "path": "BadukUnity/Assets/StreamingAssets/KataGo.meta",
+      "bytes": 180,
+      "sha256": "57b275172ee5b91fe2f4303d100c6f563e533ba556964b459d804b51d36a17dc"
+    },
+    {
+      "path": "BadukUnity/Assets/StreamingAssets.meta",
+      "bytes": 180,
+      "sha256": "b02641a3b50b6290b5b2898ea4ef6f86b4deb36d4d696d05376ebc491be2d0b5"
+    },
+    {
+      "path": "BadukUnity/Packages/manifest.json",
+      "bytes": 170,
+      "sha256": "40cd6966b7812d45f3d8337a2592bd3760e861b7f13e36e862778491a3a3d250"
+    },
+    {
+      "path": "BadukUnity/ProjectSettings/ProjectVersion.txt",
+      "bytes": 29,
+      "sha256": "c633f72c30858df860b6580040a3b75f10871dcf99192ad17d579c2753ad2ad1"
+    },
+    {
+      "path": "BadukUnity/README.md",
+      "bytes": 272,
+      "sha256": "49745411ae887ee51cffaa96966b3258353610ab6f50685d7ee660d7fb283609"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1016,
+      "sha256": "ef936d812220b94d7395a97d86a3d713fe62e0172f62384df9a56a8c91c0001b"
+    },
+    {
+      "path": "docs/AUDIT_RESULTS.json",
+      "bytes": 1165,
+      "sha256": "2e736f6fafde848f1f775428c05dbac113544fe08fb17277841494109c94b3bb"
+    },
+    {
+      "path": "docs/BINARY_SANITIZATION.json",
+      "bytes": 351,
+      "sha256": "c502874e93eca217084ac9314e26c31f902ce312207a97451ba9486c6433c81d"
+    },
+    {
+      "path": "docs/GITHUB_PUBLISH.md",
+      "bytes": 2983,
+      "sha256": "2b4571784d5be0851bd27715a213ee065def2862bccb2c9e30a5a38d3b2c93b1"
+    },
+    {
+      "path": "docs/MODEL_VERIFICATION.json",
+      "bytes": 337,
+      "sha256": "15e0efa79a5e6602c52b7e73315b0abda755db3dca9644ce49ddfc2cba9fd854"
+    },
+    {
+      "path": "docs/RELEASE_AUDIT.md",
+      "bytes": 4556,
+      "sha256": "617a6d263e586c58a405f57d82fec0e4530266bcf00ffbf6c9f1dbdd16dc32c8"
+    },
+    {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 982,
+      "sha256": "7144e18e654427fbfc8297ec7881a75f8587f7971a824539b2e70763426b56ac"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 3205,
+      "sha256": "104e59793a63e882f876730c9719f9e4e95dc3c7031b423a79a8fb7afb632420"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 623,
+      "sha256": "b590be042a7c3110a2cb5bacdbabbbacb14573705af91a251f58d74af9217001"
+    },
+    {
+      "path": "licenses/Eigen-COPYING.MPL2.txt",
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "path": "licenses/filesystem-LICENSE.txt",
+      "bytes": 1086,
+      "sha256": "1b265537c97cfb422ffb52492c96979943f54fab8746a6dd38d8329953d487cc"
+    },
+    {
+      "path": "licenses/half-LICENSE.txt",
+      "bytes": 1100,
+      "sha256": "b74a5c2b685e8fc30073606d69a0c3bad38924eea9b5e07984da03716a7d773d"
+    },
+    {
+      "path": "licenses/httplib-LICENSE.txt",
+      "bytes": 1075,
+      "sha256": "4b45cbe16d7b71b89ae6127e26e0d90a029198ca5e958ad8e3d0b8bbed364d8b"
+    },
+    {
+      "path": "licenses/KataGo-CONTRIBUTORS.txt",
+      "bytes": 3733,
+      "sha256": "92eef7672f2ff5435f2e20f8bbfb82e54cf238dbaffe7eaf4f65a276abd2208a"
+    },
+    {
+      "path": "licenses/KataGo-LICENSE.txt",
+      "bytes": 2298,
+      "sha256": "e302e84d35ee7aaf5f59530e01d72b5617af6b56a4b53d390942c1b70b56a40b"
+    },
+    {
+      "path": "licenses/KataGo-network-license.txt",
+      "bytes": 4608,
+      "sha256": "f0c5dd36891a0d53e543a8728cbf822fdf9920aafc4f1f72922fdca48d478078"
+    },
+    {
+      "path": "licenses/libzip-LICENSE.txt",
+      "bytes": 1454,
+      "sha256": "01c022eca6d566e2e8792fd0f091a28653b2a608319922bcd4de91c49d1438e1"
+    },
+    {
+      "path": "licenses/mozilla-cacerts-LICENSE.txt",
+      "bytes": 224,
+      "sha256": "8767f414caf80dce7775d9a2d54334d83afb32d73ae24ea2e85e311d4a79b7d3"
+    },
+    {
+      "path": "licenses/nlohmann-json-LICENSE.txt",
+      "bytes": 1076,
+      "sha256": "86b998c792894ccb911a1cb7994f7a9652894e7a094c0b5e45be2f553f45cf14"
+    },
+    {
+      "path": "licenses/OpenSSL-LICENSE.txt",
+      "bytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "licenses/sha2-source-license.txt",
+      "bytes": 1901,
+      "sha256": "c6579bdfc2dda0fa0399255bfae272cfa5f117a5191fd5c999c80988f6915a1d"
+    },
+    {
+      "path": "licenses/SOURCES.json",
+      "bytes": 3222,
+      "sha256": "f0b2e44031980f6a26c72e406b81dfad715719fd5a3269d9dfe4cf3021f38ac7"
+    },
+    {
+      "path": "licenses/tclap-COPYING.txt",
+      "bytes": 1142,
+      "sha256": "cd81a61d47aeb1ed63036ca260baee37719923bbd7ebd988ec4edae128f3b6eb"
+    },
+    {
+      "path": "licenses/zlib-LICENSE.txt",
+      "bytes": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3904,
+      "sha256": "d5c1ac12a76e19d89f33bea55a8cbff14a7c7c0d3afed31a8ac58d4bd4bc1a8c"
+    },
+    {
+      "path": "scripts/Audit-Package.py",
+      "bytes": 3779,
+      "sha256": "66c61ee6dfaea67ec230bceceaa3de51191a7649ace4bf3b0180769b162b3b3f"
+    },
+    {
+      "path": "scripts/Build-Windows.ps1",
+      "bytes": 1140,
+      "sha256": "bd8e1af29bba0589525509b2d4968123e3a62585a1d9c77636bf8e21ebdd4634"
+    },
+    {
+      "path": "scripts/engine-lock.json",
+      "bytes": 2045,
+      "sha256": "997e965c05648ef4f5f029e529dd1c2aba0dbdfc5deb08b3167dd1c9d08d2d12"
+    },
+    {
+      "path": "scripts/Prepare-Engine.ps1",
+      "bytes": 1831,
+      "sha256": "02561d3db99b4291192254a53663189056f7a96b2a3750c37afa31b1d3cdccf6"
+    },
+    {
+      "path": "scripts/RulesChecks.cs",
+      "bytes": 8492,
+      "sha256": "b41b6201ba93fe99b1355a072a1b724d83b7ebd04ffb90147df49795a2e9aa32"
+    },
+    {
+      "path": "scripts/Test-Rules.ps1",
+      "bytes": 1067,
+      "sha256": "99c299c8592517b15f2ba16aa82bb5aa335dc966adf902edf152b3293ee4d2e7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2333,
+      "sha256": "c2212644b8aabdc2aefbe49d4e4f85473e511e7db39410d970ef3c1209940069"
+    }
+  ]
+}

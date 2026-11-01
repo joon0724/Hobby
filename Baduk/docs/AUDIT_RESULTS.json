@@ -1,0 +1,36 @@
+{
+  "reviewed_on": "2026-11-01",
+  "scope": "Prepared Baduk source files and release ZIP only; not parent repository history",
+  "source_scan": {
+    "status": "PASS",
+    "findings": []
+  },
+  "release_zip_scan": {
+    "target": "Baduk-Windows-v1.1.0.zip",
+    "files": 196,
+    "bytes": 294505581,
+    "findings": [],
+    "status": "PASS"
+  },
+  "release_zip_sha256": "a68103499dbd13b2270e011b2e64d3e01432189a25c5306eda0c6ffcce2f5a8d",
+  "zip_crc": "PASS",
+  "fresh_boards_9_13_19": "PASS; zero stones, moves, passes and captures",
+  "source_tests": {
+    "rules": 34,
+    "engine_integration": 8,
+    "status": "PASS"
+  },
+  "sanitized_player_assembly_tests": {
+    "rules": 34,
+    "engine_integration": 8,
+    "status": "PASS"
+  },
+  "git_exclusion_rules": "PASS: release ZIP, engine/model, cache, SGF and env excluded; main source/config not ignored",
+  "powershell_parse": "PASS",
+  "unity_rebuild_this_review": false,
+  "limits": [
+    "Pattern checks are not proof of all possible secret formats",
+    "No vulnerability audit of third-party binaries",
+    "No inspection or rewrite of existing parent Git history"
+  ]
+}
