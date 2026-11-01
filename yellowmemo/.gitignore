@@ -1,0 +1,30 @@
+# 개인 메모 / 복구 자료
+data/
+**/data/
+widget-notes.json*
+notes.json*
+ui-notes.json*
+test-notes.json*
+*.bak
+*.lock
+*.tmp
+*.importing
+*.damaged-*
+이전메모백업/
+# 로컬 빌드 / 검사 / 편집기
+/artifacts/
+/work/
+/bin/
+/obj/
+*.exe
+*.pdb
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.env
+.env.*
+# 공개 배포 ZIP만 허용
+*.zip
+!/releases/YellowMemo-*.zip
