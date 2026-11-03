@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0c0a0b" />
+    <meta
+      name="description"
+      content="ULTRON — 목소리에 반응하는 당신의 개인 AI 비서"
+    />
+    <title>ULTRON · Crimson Intelligence</title>
+    <style>
+      /*__CSS__*/
+    </style>
+  </head>
+  <body>
+    <header class="widget-titlebar">
+      <span>ULTRON <small>PERSONAL AI</small></span>
+      <nav>
+        <button
+          id="window-pin"
+          aria-label="항상 위에 표시"
+          aria-pressed="false"
+          title="항상 위에 표시"
+        >
+          ◇</button
+        ><button id="window-minimize" aria-label="최소화" title="최소화">
+          −</button
+        ><button id="window-close" aria-label="종료" title="종료">×</button>
+      </nav>
+    </header>
+    <div class="noise" aria-hidden="true"></div>
+
+    <main>
+      <section class="core-panel" aria-label="Ultron 음성 코어">
+        <div class="core-top">
+          <span class="protocol">CRIMSON PROTOCOL</span>
+          <div class="core-telemetry">
+            <span class="connection"
+              ><i></i><span id="connection">CORE ONLINE</span></span
+            ><span id="clock">00:00:00</span>
+          </div>
+        </div>
+        <div class="core-stage">
+          <canvas id="core" aria-hidden="true"></canvas
+          ><button id="core-button" aria-label="음성 입력 시작">
+            <span class="core-name">U L T R O N</span
+            ><span class="core-code">VOICE INTERFACE</span>
+          </button>
+          <div class="orbit-label label-a">VOICE <i></i></div>
+          <div class="orbit-label label-b"><i></i> REASON</div>
+          <div class="orbit-label label-c">MEMORY <i></i></div>
+          <div class="core-coordinate">35° / NEURAL FIELD / 128°</div>
+        </div>
+        <div class="status-block">
+          <div class="state-label" id="state-label">AWAITING YOUR COMMAND</div>
+          <p id="state-help">코어를 클릭하거나, 아래에 메시지를 입력하세요.</p>
+          <div class="wave" id="wave" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+    <section class="conversation" aria-label="대화 입력">
+      <div class="last-response" id="last-response" aria-live="polite">
+        <span>ULTRON</span>
+        <p>안녕하세요. 당신의 다음 명령을 기다리고 있습니다.</p>
+      </div>
+      <form id="command-form">
+        <button type="button" id="mic" aria-label="음성 입력 시작">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <rect x="9" y="2" width="6" height="13" rx="3" />
+            <path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8" />
+          </svg></button
+        ><input
+          id="command"
+          aria-label="Ultron에게 메시지"
+          placeholder="Ultron에게 요청하세요…"
+          autocomplete="off"
+          maxlength="3000"
+        /><kbd>ENTER ↵</kbd
+        ><button id="send" type="submit" aria-label="메시지 보내기">↗</button>
+      </form>
+      <div class="input-footer">
+        <span
+          ><span class="red-dot"></span
+          ><span id="input-status">텍스트 · 음성 입력</span></span
+        >
+        <div>
+          <button id="voice-toggle" aria-pressed="true">음성 응답 ON</button
+          ><span class="separator">/</span><span id="lang-label">한국어</span
+          ><span class="separator">/</span
+          ><button id="settings-open" aria-label="설정 열기">설정</button>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="settings">
+      <div class="dialog-head">
+        <div>
+          <span class="eyebrow">PREFERENCES</span>
+          <h2>Ultron 설정</h2>
+        </div>
+        <button
+          class="icon-button"
+          data-close="settings"
+          aria-label="설정 닫기"
+        >
+          ×
+        </button>
+      </div>
+      <div class="settings-box">
+        <h3>대화 AI</h3>
+        <label for="chat-provider">AI 제공사</label
+        ><select id="chat-provider" data-api-control>
+          <option value="groq">Groq</option>
+          <option value="openai">OpenAI</option>
+          <option value="anthropic">Claude</option>
+          <option value="gemini">Gemini</option>
+        </select>
+        <p id="chat-status" role="status">연결 확인 중…</p>
+        <div id="chat-credentials">
+          <label for="chat-key">API KEY</label
+          ><input
+            class="provider-key"
+            id="chat-key"
+            type="password"
+            autocomplete="off"
+            spellcheck="false"
+            maxlength="512"
+            data-api-control
+          /><label id="chat-workspace-row" hidden
+            >Claude 워크스페이스 ID · 필요한 계정만<input
+              id="chat-workspace"
+              class="provider-key"
+              placeholder="wrkspc_…"
+              maxlength="100"
+              data-api-control /></label
+          ><label class="remember-key" id="chat-remember-row"
+            ><input id="chat-remember" type="checkbox" data-api-control /> 이
+            Windows 계정에 암호화해 저장</label
+          >
+          <div class="key-actions">
+            <button id="chat-connect" data-api-control>
+              키 확인 · 모델 불러오기</button
+            ><button id="chat-forget" data-api-control>키 삭제</button
+            ><button id="chat-get-key" data-api-control>키 발급 ↗</button>
+          </div>
+          <label for="chat-model">대화 모델</label
+          ><select id="chat-model" data-api-control>
+            <option value="">키 확인 후 모델을 불러오세요</option>
+          </select>
+        </div>
+      </div>
+      <details class="voice-connection">
+        <summary>음성 인식 연결 · 대화 AI와 별도 설정</summary>
+        <div class="settings-box">
+          <h3>음성 인식</h3>
+          <label for="stt-provider">음성 인식 제공사</label
+          ><select id="stt-provider" data-api-control>
+            <option value="groq">Groq</option>
+            <option value="openai">OpenAI</option>
+            <option value="browser">브라우저 기본</option>
+            <option value="none">사용 안 함</option>
+          </select>
+          <p id="stt-status" role="status">연결 확인 중…</p>
+          <div id="stt-credentials">
+            <label for="stt-key">API KEY</label
+            ><input
+              class="provider-key"
+              id="stt-key"
+              type="password"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="512"
+              data-api-control
+            /><label id="stt-workspace-row" hidden
+              >Claude 워크스페이스 ID · 필요한 계정만<input
+                id="stt-workspace"
+                class="provider-key"
+                placeholder="wrkspc_…"
+                maxlength="100"
+                data-api-control /></label
+            ><label class="remember-key" id="stt-remember-row"
+              ><input id="stt-remember" type="checkbox" data-api-control /> 이
+              Windows 계정에 암호화해 저장</label
+            >
+            <div class="key-actions">
+              <button id="stt-connect" data-api-control>
+                키 확인 · 모델 불러오기</button
+              ><button id="stt-forget" data-api-control>키 삭제</button
+              ><button id="stt-get-key" data-api-control>키 발급 ↗</button>
+            </div>
+            <label for="stt-model">음성 인식 모델</label
+            ><select id="stt-model" data-api-control>
+              <option value="">키 확인 후 모델을 불러오세요</option>
+            </select>
+          </div>
+        </div>
+        <p class="fine-print">
+          같은 제공사는 연결한 키를 공유합니다. Claude·Gemini로 대화하면서
+          Groq·OpenAI로 음성을 인식할 수 있습니다.
+        </p>
+      </details>
+      <p id="key-privacy" class="fine-print"></p>
+      <label
+        >음성 선택<select id="voice-select">
+          <option value="">브라우저 기본 한국어 음성</option>
+        </select></label
+      ><label
+        >말하기 속도 <span id="rate-value">1.0</span
+        ><input
+          id="rate"
+          type="range"
+          min="0.7"
+          max="1.3"
+          step="0.1"
+          value="1" /></label
+      ><label
+        >음성 인식 언어<select id="language">
+          <option value="ko-KR">한국어</option>
+          <option value="en-US">English</option>
+        </select></label
+      >
+      <div class="settings-box">
+        <h3>대화 기록</h3>
+        <label class="remember-key" id="chat-storage-choice"
+          ><input id="save-conversation" type="checkbox" /> 최근 대화를 이
+          기기에 저장</label
+        >
+        <p class="fine-print" id="chat-storage-help">
+          저장을 끄면 디스크의 대화와 백업을 지웁니다. 현재 대화는 앱을 닫을
+          때까지 이어집니다. 저장되는 대화와 메모는 암호화되지 않습니다.
+        </p>
+        <div class="key-actions">
+          <button id="clear-conversation">대화 기록 삭제</button
+          ><button id="purge-recovery">이전 복구 파일 삭제</button>
+          <button id="recover-data" hidden>손상된 저장 파일 복구</button>
+        </div>
+      </div>
+      <button id="motion-toggle" class="motion-setting" aria-pressed="false">
+        모션 줄이기
+      </button>
+      <p class="fine-print">
+        <span id="voice-privacy"
+          >음성 인식은 지원 브라우저와 마이크 허용이 필요하며, 브라우저의 음성
+          서비스가 오디오를 처리할 수 있습니다.</span
+        >
+      </p>
+    </dialog>
+
+    <div id="toast" role="status"></div>
+    <script>
+      /*__JS__*/
+    </script>
+  </body>
+</html>
