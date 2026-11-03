@@ -1,0 +1,11 @@
+{
+  "name": "ultron-personal",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-03",
+  "vars": {
+    "ULTRON_PUBLIC_ORIGIN": "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev",
+    "ULTRON_ACCESS_AUD": "YOUR-ACCESS-APPLICATION-AUDIENCE"
+  },
+  "durable_objects": {"bindings": [{"name": "ULTRON_LIMITER", "class_name": "UltronRateLimiter"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["UltronRateLimiter"]}]
+}
